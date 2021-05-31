@@ -1,0 +1,148 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+/* check box  */
+#check {
+  display: none;
+}
+
+/* checkbox */
+label #sidebar_btn {
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+  transition-property: color;
+}
+
+label #sidebar_btn:hover {
+  color: #19b3d3;
+}
+
+/* checkbox in sidebar  */
+.checkbar {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.5rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* Sidebar  */
+.sidebar {
+  z-index: 1;
+  background: #2f323a;
+  padding-top: 1.5rem;
+  position: fixed;
+  left: 0;
+  width: 13rem;
+  height: 100%;
+}
+
+.sidebar button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  line-height: 3rem;
+  text-decoration: none;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.sidebar button:hover {
+  background: #19b3d3;
+}
+
+.sidebar button span {
+  padding-left: 1rem;
+}
+
+.sidebar .icons {
+  padding-left: 1rem;
+}
+
+/* main content  */
+.content {
+  margin-left: 13rem;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .flex-item-1 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .sidebar button span {
+    display: none;
+  }
+
+  .sidebar {
+    width: 3rem;
+  }
+
+  .content {
+    margin-left: 3rem;
+  }
+
+  #check:checked ~ .sidebar button span {
+    display: block;
+  }
+
+  #check:checked ~ .sidebar button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #check:checked ~ .sidebar {
+    width: 13rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #check:checked ~ .sidebar button span {
+    display: none;
+  }
+
+  #check:checked ~ .sidebar {
+    width: 3rem;
+  }
+
+  #check:checked ~ .content {
+    margin-left: 3rem;
+  }
+}
+
+/* main content  */
+/* content-heading  */
+.content-heading {
+  background-color: #0061a8;
+  padding: 1rem;
+}
+
+/* homepage  */
+.homepage {
+  background-color: #1dc4e7;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* about  */
