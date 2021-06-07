@@ -1,8 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import { Card, CardTitle, CardBody } from "@progress/kendo-react-layout";
-import "../subPages.css";
+import "../pages.css";
+import keys from "../../config/keys";
 
 const About = () => {
+  const [data, setData] = useState({});
+
+  useEffect(() => {
+    const url = keys.backendURI + "/api/about";
+    const fetchData = async () => {
+      const result = await axios(url);
+      setData(result.data.data[0]);
+    };
+    fetchData();
+  }, []);
+
   return (
     <div className="component-section">
       <div className="content-heading">ABOUT</div>
@@ -17,17 +30,16 @@ const About = () => {
         >
           <CardBody className="card-body">
             <CardTitle>
-              <h2>
-                Mission-driven full stack developer with a passion for
-                thoughtful UI design, collaboration, and teaching.
-              </h2>
+              <h1>|| {data.title} ||</h1>
             </CardTitle>
+
             <br />
-            <p className="discription">
-              {/* Fetch the ABOUT through API */}
-              Some quick example text to build on the card title and make up the
-              bulk of the card content.
-            </p>
+            <br />
+            <br />
+            <br />
+            <hr />
+            <br />
+            <h2>{data.description}</h2>
           </CardBody>
         </Card>
       </div>

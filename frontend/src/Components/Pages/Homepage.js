@@ -1,6 +1,6 @@
 import React from "react";
 import Clock from "react-live-clock";
-import "../subPages.css";
+import "../pages.css";
 import Img from "../images/lappy.jpg";
 
 const Homepage = () => {

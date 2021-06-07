@@ -39,7 +39,7 @@ label #sidebar_btn:hover {
 /* Sidebar  */
 .sidebar {
   z-index: 1;
-  background: #2f323a;
+  /* background: #2f323a; */
   padding-top: 1.5rem;
   position: fixed;
   left: 0;

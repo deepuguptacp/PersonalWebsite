@@ -11,13 +11,13 @@ import {
   faFile,
   faAddressCard,
 } from "@fortawesome/free-solid-svg-icons";
-import "./subPages.css";
+import "./pages.css";
 
 const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="checkbar">
-        <label for="check">
+        <label htmlFor="check">
           <FontAwesomeIcon className="icons" icon={faBars} id="sidebar_btn" />
         </label>
       </div>

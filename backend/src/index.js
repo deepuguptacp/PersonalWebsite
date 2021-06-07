@@ -11,10 +11,12 @@ const educationRouter = require("./resources/education/education.router");
 const experienceRouter = require("./resources/experience/experience.router");
 const projectsRouter = require("./resources/projects/projects.router");
 const skillsRouter = require("./resources/skills/skills.router");
+// const mongo = require("mongodb");
+// const assert = require("assert");
 
 // connect to mongoDB
 mongoose.connect(
-  "mongodb+srv://test:test@login-details.dvglj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+  "mongodb+srv://test:test@user1.dvglj.mongodb.net/sample_mflix?retryWrites=true&w=majority",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
