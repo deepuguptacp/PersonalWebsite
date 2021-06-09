@@ -25,29 +25,29 @@ const Sidebar = () => {
       </div>
 
       <button>
-        <Link to="about" spy={true} smooth={true}>
+        <Link to="about" smooth={false}>
           <FontAwesomeIcon className="icons" icon={faAddressCard} />
           <span>About</span>
         </Link>
       </button>
 
       <button>
-        <Link to="experience" spy={true} smooth={true}>
+        <Link to="experience" smooth={false}>
           <FontAwesomeIcon className="icons" icon={faChartLine} />
           <span>Experience</span>
         </Link>
       </button>
 
       <button>
-        <Link to="project" spy={true} smooth={true}>
+        <Link to="project" smooth={false}>
           <FontAwesomeIcon className="icons" icon={faPen} />
           <span>Projects</span>
         </Link>
       </button>
       <button>
-        <Link to="skill" spy={true} smooth={true}>
+        <Link to="skill" smooth={false}>
           <FontAwesomeIcon className="icons" icon={faSkiing} />
-          <span>Skill</span>
+          <span>Skills</span>
         </Link>
       </button>
       {/* <button>
@@ -55,13 +55,13 @@ const Sidebar = () => {
         <span>Awards</span>
       </button> */}
       <button>
-        <Link to="education" spy={true} smooth={true}>
+        <Link to="education" smooth={false}>
           <FontAwesomeIcon className="icons" icon={faSchool} />
           <span>Education</span>
         </Link>
       </button>
       <button>
-        <Link to="contact" spy={true} smooth={true}>
+        <Link to="contact" smooth={false}>
           <FontAwesomeIcon className="icons" icon={faIdCard} />
           <span>Contact</span>
         </Link>

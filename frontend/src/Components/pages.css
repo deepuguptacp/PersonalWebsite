@@ -8,6 +8,7 @@
   background-color: #def2f1;
   font-size: 20px;
   font-family: "Times New Roman", Times, serif;
+  padding-right: 20px;
 }
 .homepage {
   background-color: #def2f1;
@@ -115,11 +116,23 @@ h1 {
   height: auto;
   display: flex;
   flex-direction: row;
+  padding-left: 230px;
 }
 
 .reserved {
   margin: auto;
+  display: flex;
+  flex-direction: row;
+  padding-left: 100px;
 }
+/* 
+.footer .reserved .developers {
+  margin-right: 50px;
+}
+
+.footer .reserved .h2 {
+  margin-left: 50px;
+} */
 
 .to-top {
   margin: auto;

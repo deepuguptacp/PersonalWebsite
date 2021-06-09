@@ -10,14 +10,19 @@ import {
 const Footer = () => {
   return (
     <div className="footer">
+      <div className="footer-content"></div>
+      <div className="developers">
+        Designed and Developed by <br /> Deepu Gupta and Poorva Mago.
+      </div>
       <div className="reserved">
         <h2>
           {/* <FontAwesomeIcon icon={faStopCircle} /> */} All Rights Reserved ®
         </h2>
       </div>
+
       <div className="to-top">
         <div>
-          <Link to="main-page" spy={true} smooth={true}>
+          <Link to="main-page" smooth={true}>
             <h1>
               <FontAwesomeIcon icon={faArrowCircleUp} />
             </h1>
