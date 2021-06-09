@@ -70,7 +70,11 @@ const Contact = () => {
               <div className="card-title-content">
                 <h2>
                   LinkedIn Profile :-{" "}
-                  <a href="https://www.linkedin.com/in/deepu-gupta-72493116b/">
+                  <a
+                    href="https://www.linkedin.com/in/deepu-gupta-72493116b/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     {data.linkedIn}
                   </a>
                 </h2>
@@ -85,7 +89,13 @@ const Contact = () => {
               <div className="card-title-content">
                 <h2>
                   Github Profile :-{" "}
-                  <a href="https://github.com/deepuguptacp">{data.github}</a>
+                  <a
+                    href="https://github.com/deepuguptacp"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {data.github}
+                  </a>
                 </h2>
               </div>
             </div>

@@ -54,16 +54,26 @@ const Project = () => {
             <div className="card-title-content">
               <h2>
                 To view the project click{" "}
-                <a href="https://bit.ly/2XKICSw">here</a>
+                <a
+                  href="https://bit.ly/2XKICSw"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  here.
+                </a>
                 {/* {data.data[0].websiteLink} */}
               </h2>
             </div>
             <div className="card-title-content">
               <h2>
                 To view the source code of the project click{" "}
-                <a href="https://github.com/deepuguptacp/deepuguptacp.github.io">
+                <a
+                  href="https://github.com/deepuguptacp/deepuguptacp.github.io"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   {/* {data.data[0].githubLink} */}
-                  source code
+                  source code.
                 </a>
               </h2>
             </div>

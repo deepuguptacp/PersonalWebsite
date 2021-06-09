@@ -1,6 +1,7 @@
 import React from "react";
 import Sidebar from "./Components/Sidebar";
 import Main from "./Components/Main";
+import Footer from "./Components/Footer";
 
 const App = () => {
   return (
@@ -8,6 +9,7 @@ const App = () => {
       <input type="checkbox" id="check" />
       <Sidebar />
       <Main />
+      <Footer />
     </div>
   );
 };

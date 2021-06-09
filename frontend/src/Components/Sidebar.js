@@ -1,5 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-scroll";
 import {
   faPen,
   faBars,
@@ -12,6 +13,7 @@ import {
   faAddressCard,
 } from "@fortawesome/free-solid-svg-icons";
 import "./pages.css";
+import Pdf from "./images/Deepu_Resume.pdf";
 
 const Sidebar = () => {
   return (
@@ -23,37 +25,53 @@ const Sidebar = () => {
       </div>
 
       <button>
-        <FontAwesomeIcon className="icons" icon={faAddressCard} />
-        <span>About</span>
+        <Link to="about" spy={true} smooth={true}>
+          <FontAwesomeIcon className="icons" icon={faAddressCard} />
+          <span>About</span>
+        </Link>
+      </button>
+
+      <button>
+        <Link to="experience" spy={true} smooth={true}>
+          <FontAwesomeIcon className="icons" icon={faChartLine} />
+          <span>Experience</span>
+        </Link>
+      </button>
+
+      <button>
+        <Link to="project" spy={true} smooth={true}>
+          <FontAwesomeIcon className="icons" icon={faPen} />
+          <span>Projects</span>
+        </Link>
       </button>
       <button>
-        <FontAwesomeIcon className="icons" icon={faChartLine} />
-        <span>Experience</span>
-      </button>
-      <button>
-        <FontAwesomeIcon className="icons" icon={faPen} />
-        <span>Projects</span>
-      </button>
-      <button>
-        <FontAwesomeIcon className="icons" icon={faSkiing} />
-        <span>Skills</span>
+        <Link to="skill" spy={true} smooth={true}>
+          <FontAwesomeIcon className="icons" icon={faSkiing} />
+          <span>Skill</span>
+        </Link>
       </button>
       {/* <button>
         <FontAwesomeIcon className="icons" icon={faAward} />
         <span>Awards</span>
       </button> */}
       <button>
-        <FontAwesomeIcon className="icons" icon={faSchool} />
-        <span>Education</span>
+        <Link to="education" spy={true} smooth={true}>
+          <FontAwesomeIcon className="icons" icon={faSchool} />
+          <span>Education</span>
+        </Link>
       </button>
       <button>
-        <FontAwesomeIcon className="icons" icon={faIdCard} />
-        <span>Contact</span>
+        <Link to="contact" spy={true} smooth={true}>
+          <FontAwesomeIcon className="icons" icon={faIdCard} />
+          <span>Contact</span>
+        </Link>
       </button>
-      <button>
-        <FontAwesomeIcon className="icons" icon={faFile} />
-        <span>Resume</span>
-      </button>
+      <a href={Pdf} target="_blank" rel="noreferrer">
+        <button>
+          <FontAwesomeIcon className="icons" icon={faFile} />
+          <span>Resume</span>
+        </button>
+      </a>
     </div>
   );
 };

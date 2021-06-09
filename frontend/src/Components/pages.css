@@ -28,9 +28,9 @@ h1 {
   margin: 10px;
 }
 .image-info .profile-image {
-  width: 500px;
-  height: 500px;
-  border-radius: 250px;
+  width: 480px;
+  height: 480px;
+  border-radius: 300px;
   float: right;
   border: 2px solid #2b7a78;
   margin-right: 50px;
@@ -107,4 +107,25 @@ h1 {
 
 .skill-image {
   height: 150px;
+}
+
+/* Footer.js */
+.footer {
+  background-color: #2b7a78;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.reserved {
+  margin: auto;
+}
+
+.to-top {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+.to-top-text {
+  margin: auto;
 }

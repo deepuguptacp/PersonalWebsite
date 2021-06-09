@@ -11,14 +11,28 @@ import Project from "../Components/Pages/Project";
 const Main = () => {
   return (
     <div className="content">
-      <Homepage />
-      <About />
-      <Experience />
-      <Project />
-      <Skill />
+      <div id="main-page">
+        <Homepage />
+      </div>
+      <div id="about">
+        <About />
+      </div>
+      <div id="experience">
+        <Experience />
+      </div>
+      <div id="project">
+        <Project />
+      </div>
+      <div id="skill">
+        <Skill />
+      </div>
       {/* <Award /> */}
-      <Education />
-      <Contact />
+      <div id="education">
+        <Education />
+      </div>
+      <div id="contact">
+        <Contact />
+      </div>
     </div>
   );
 };
