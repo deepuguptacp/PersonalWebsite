@@ -6,7 +6,7 @@ import {
   faIdCard,
   faChartLine,
   faSkiing,
-  faAward,
+  // faAward,
   faSchool,
   faFile,
   faAddressCard,
@@ -38,10 +38,10 @@ const Sidebar = () => {
         <FontAwesomeIcon className="icons" icon={faSkiing} />
         <span>Skills</span>
       </button>
-      <button>
+      {/* <button>
         <FontAwesomeIcon className="icons" icon={faAward} />
         <span>Awards</span>
-      </button>
+      </button> */}
       <button>
         <FontAwesomeIcon className="icons" icon={faSchool} />
         <span>Education</span>

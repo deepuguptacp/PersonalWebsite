@@ -21,62 +21,62 @@ function Sidebar() {
         <div></div>
       </button>
       <div className="Sidebar-Content" onClick={showSidebar}>
-        <button>
-          <FontAwesomeIcon className="icons" icon={faAddressCard} />
-          <span>
-            <Link to="/">About</Link>
-          </span>
-        </button>
-        <button>
-          <FontAwesomeIcon className="icons" icon={faAward} />
-          <span>
-            <Link to="/award">Award</Link>
-          </span>
-        </button>
-
-        {/* 
-          <button>
-            <FontAwesomeIcon className="icons" icon={fa} />
-            <span>
-              <Link to="/blog">Blog</Link>
-            </span>
-          </button>
-         */}
-
-        <button>
-          <FontAwesomeIcon className="icons" icon={faIdCard} />
-          <span>
-            <Link to="/contact">Contact</Link>
-          </span>
-        </button>
-
-        <button>
-          <FontAwesomeIcon className="icons" icon={faSchool} />
-          <span>
-            <Link to="/education">Education</Link>
-          </span>
-        </button>
-
-        <button>
-          <FontAwesomeIcon className="icons" icon={faChartLine} />
-          <span>
-            <Link to="/experience">Experience</Link>
-          </span>
-        </button>
-
-        <button>
-          <FontAwesomeIcon className="icons" icon={faPen} />
-          <span>
-            <Link to="/project">Project</Link>
-          </span>
-        </button>
-
-        <button>
-          <FontAwesomeIcon className="icons" icon={faSkiing} />
-          <span>
-            <Link to="/skill">Skill</Link>
-          </span>
-        </button>
+        <div className="sidebar-button">
+          <div className="button-icon">
+            <Link to="/">
+              <FontAwesomeIcon className="icons" icon={faAddressCard} />
+              About
+            </Link>
+          </div>
+        </div>
+        <div className="sidebar-button">
+          <div className="button-icon">
+            <Link to="/award">
+              <FontAwesomeIcon className="icons" icon={faAward} />
+              Award
+            </Link>
+          </div>
+        </div>
+        <div className="sidebar-button">
+          <div className="button-icon">
+            <Link to="/contact">
+              <FontAwesomeIcon className="icons" icon={faIdCard} />
+              Contact
+            </Link>
+          </div>
+        </div>
+        <div className="sidebar-button">
+          <div className="button-icon">
+            <Link to="/education">
+              <FontAwesomeIcon className="icons" icon={faSchool} />
+              Education
+            </Link>
+          </div>
+        </div>
+        <div className="sidebar-button">
+          <div className="button-icon">
+            <Link to="/experience">
+              <FontAwesomeIcon className="icons" icon={faChartLine} />
+              Experience
+            </Link>
+          </div>
+        </div>
+        <div className="sidebar-button">
+          <div className="button-icon">
+            <Link to="/project">
+              <FontAwesomeIcon className="icons" icon={faPen} />
+              Projects
+            </Link>
+          </div>
+        </div>
+        <div className="sidebar-button">
+          <div className="button-icon">
+            <Link to="/skill">
+              <FontAwesomeIcon className="icons" icon={faSkiing} />
+              Skill
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
   );

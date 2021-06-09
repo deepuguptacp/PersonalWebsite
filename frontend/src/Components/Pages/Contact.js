@@ -38,12 +38,12 @@ const Contact = () => {
           <CardBody className="card-body">
             <CardTitle>
               <div className="card-title">
-                <div>
+                <div className="card-title-content">
                   <h2>
                     <FontAwesomeIcon icon={faAddressCard} />
                   </h2>
                 </div>
-                <div>
+                <div className="card-title-content">
                   <h2>How to contact me</h2>
                 </div>
               </div>
@@ -52,22 +52,22 @@ const Contact = () => {
             <br />
 
             <div className="card-title">
-              <div>
+              <div className="card-title-content">
                 <h2>
                   <FontAwesomeIcon icon={faEnvelope} />
                 </h2>
               </div>
-              <div>
+              <div className="card-title-content">
                 <h2>Email Id :- {data.gmail}</h2>
               </div>
             </div>
             <div className="card-title">
-              <div>
+              <div className="card-title-content">
                 <h2>
                   <FontAwesomeIcon icon={faLaptop} />
                 </h2>
               </div>
-              <div>
+              <div className="card-title-content">
                 <h2>
                   LinkedIn Profile :-{" "}
                   <a href="https://www.linkedin.com/in/deepu-gupta-72493116b/">
@@ -77,12 +77,12 @@ const Contact = () => {
               </div>
             </div>
             <div className="card-title">
-              <div>
+              <div className="card-title-content">
                 <h2>
                   <FontAwesomeIcon icon={faCode} />
                 </h2>
               </div>
-              <div>
+              <div className="card-title-content">
                 <h2>
                   Github Profile :-{" "}
                   <a href="https://github.com/deepuguptacp">{data.github}</a>

@@ -33,15 +33,17 @@ const Education = () => {
             }}
           >
             <CardBody className="card-body">
-              <CardTitle>
+              <CardTitle className="card-title-content">
                 <h2>{data.data[0].degree}</h2>
               </CardTitle>
               <hr />
               <br />
-              <h2>Organization : {data.data[0].organization}</h2>
-              <h2>Passed On : {data.data[0].date}</h2>
-              <h2>Branch : {data.data[0].branch}</h2>
-              <h2>Place : {data.data[0].location}</h2>
+              <div className="card-title-content">
+                 <h2>Organization : {data.data[0].organization}</h2>
+                <h2>Passed On : {data.data[0].date}</h2>
+                <h2>Branch : {data.data[0].branch}</h2>
+                <h2>Place : {data.data[0].location}</h2>
+              </div>
             </CardBody>
           </Card>
         </div>
@@ -55,15 +57,17 @@ const Education = () => {
             }}
           >
             <CardBody className="card-body">
-              <CardTitle>
+              <CardTitle className="card-title-content">
                 <h2>{data.data[1].degree}</h2>
               </CardTitle>
               <hr />
               <br />
-              <h2>Organization : {data.data[1].organization}</h2>
-              <h2>Passed On : {data.data[1].date}</h2>
-              <h2>Branch : {data.data[1].branch}</h2>
-              <h2>Place : {data.data[1].location}</h2>
+              <div className="card-title-content">
+                <h2>Organization : {data.data[1].organization}</h2>
+                <h2>Passed On : {data.data[1].date}</h2>
+                <h2>Branch : {data.data[1].branch}</h2>
+                <h2>Place : {data.data[1].location}</h2>
+              </div>
             </CardBody>
           </Card>
         </div>
@@ -78,15 +82,17 @@ const Education = () => {
           }}
         >
           <CardBody className="card-body">
-            <CardTitle>
+            <CardTitle className="card-title-content">
               <h2>{data.data[2].degree}</h2>
             </CardTitle>
             <hr />
             <br />
-            <h2>Organization : {data.data[2].organization}</h2>
-            <h2>Passed On : {data.data[2].date}</h2>
-            <h2>Branch : {data.data[2].branch}</h2>
-            <h2>Place : {data.data[2].location}</h2>
+            <div className="card-title-content">
+              <h2>Organization : {data.data[2].organization}</h2>
+              <h2>Passed On : {data.data[2].date}</h2>
+              <h2>Branch : {data.data[2].branch}</h2>
+              <h2>Place : {data.data[2].location}</h2>
+            </div>
           </CardBody>
         </Card>{" "}
       </div>

@@ -4,14 +4,29 @@
   left: -300px;
   width: 300px;
   height: 100%;
-  background-color: rgb(79, 78, 141);
+  background-color: rgb(31, 100, 13);
   transition: left 300ms ease-out;
 }
 .sidebar.Sidebar-Content {
   font-size: 10px;
   position: absolute;
-  margin: 20px;
+  /* margin: 20px; */
 }
+
+.sidebar-button {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  background-color: rgb(31, 100, 13);
+}
+
+.button-icon {
+  font-size: x-large;
+  background-color: rgb(31, 100, 13);
+  margin: auto;
+  padding: 20px;
+}
+
 .sidebar.active {
   left: 0;
 }
@@ -21,13 +36,13 @@
   height: 40px;
   position: absolute;
   right: -50px;
-  background-color: rgb(79, 78, 141);
+  background-color: rgb(31, 100, 13);
 }
 
 .hamburger:after,
 .hamburger:before,
 .hamburger div {
-  background-color: #fff;
+  background-color: rgb(250, 246, 246);
   height: 1px;
   margin: 7px 0;
   border-radius: 3px;

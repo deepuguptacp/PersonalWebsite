@@ -11,7 +11,7 @@ function Skill() {
         <input type="string" />
       </label>
       <br /> <br />
-      <button onclick={handleSubmit}>Submit</button>
+      <button onClick={handleSubmit}>Submit</button>
     </div>
   );
 }

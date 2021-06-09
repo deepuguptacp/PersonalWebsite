@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const projectSchema = new mongoose.Schema(
   {
-    name: {
+    title: {
       type: String,
     },
     websiteLink: {
@@ -12,10 +12,10 @@ const projectSchema = new mongoose.Schema(
       type: String,
     },
     startingdate: {
-      type: Date,
+      type: String,
     },
     endingdate: {
-      type: Date,
+      type: String,
     },
     description: {
       type: String,

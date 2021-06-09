@@ -1,25 +1,28 @@
-const mongoose = require('mongoose')
+const mongoose = require("mongoose");
 
 const experienceSchema = new mongoose.Schema(
   {
     designation: {
-      type: String
+      type: String,
     },
     organization: {
-      type: String
+      type: String,
     },
-    startingdate: Date,
-    endingdate: Date,
+    startingdate: {
+      type: String,
+    },
+    endingdate: {
+      type: String,
+    },
     description: {
-      type: String
+      type: String,
     },
     location: {
-      type: String
-    }
+      type: String,
+    },
   },
   { timestamps: true }
-)
+);
 
-
-const Experience = mongoose.model('experience', experienceSchema)
-module.exports = Experience
+const Experience = mongoose.model("experience", experienceSchema);
+module.exports = Experience;

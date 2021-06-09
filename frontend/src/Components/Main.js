@@ -2,7 +2,7 @@ import React from "react";
 import Homepage from "../Components/Pages/Homepage";
 import About from "../Components/Pages/About";
 import Experience from "../Components/Pages/Experience";
-import Award from "../Components/Pages/Award";
+// import Award from "../Components/Pages/Award";
 import Education from "../Components/Pages/Education";
 import Skill from "../Components/Pages/Skills";
 import Contact from "../Components/Pages/Contact";
@@ -16,7 +16,7 @@ const Main = () => {
       <Experience />
       <Project />
       <Skill />
-      <Award />
+      {/* <Award /> */}
       <Education />
       <Contact />
     </div>

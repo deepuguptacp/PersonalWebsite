@@ -15,6 +15,7 @@ import Ml from "../images/machine-learning.png";
 import MsOffice from "../images/microsoft.png";
 import Nodejs from "../images/nodejs.png";
 import Reduximg from "../images/redux.png";
+import Mongo from "../images/mongo.png";
 
 const Skill = () => {
   const [data, setData] = useState({});
@@ -34,52 +35,59 @@ const Skill = () => {
   return (
     <div className="component-section">
       <div className="content-heading">SKILLS</div>
-      <div className="card-content-row">
-        <div className="card-content">
-          <Card
-            style={{
-              margin: 100,
-              marginLeft: 100,
-              marginTop: 100,
-              borderWidth: 2,
-            }}
-          >
-            {/* Skills and endorsement */}
-            <CardBody className="card-body">
-              <CardTitle>
-                <h2>Knowledge</h2>
-              </CardTitle>
-              <br />
-              <div className="skills">
-                <div className="column-align">
-                  <div className="skill-image">
-                    <img className="skill-image" src={Cpp} alt="Loding..." />
-                  </div>
-                  <div>
-                    <h3>{data.data[0].name}</h3>
-                  </div>
+      <div className="card-content">
+        <Card
+          style={{
+            margin: 100,
+            marginLeft: 100,
+            marginTop: 100,
+            borderWidth: 2,
+          }}
+        >
+          {/* Skills and endorsement */}
+          <CardBody className="card-body">
+            <CardTitle>
+              <h2>Knowledge</h2>
+            </CardTitle>
+            <br />
+            <div className="skills">
+              <div className="column-align">
+                <div className="skill-image">
+                  <img className="skill-image" src={Cpp} alt="Loding..." />
                 </div>
-                <div className="column-align">
-                  <div className="skill-image">
-                    <img className="skill-image" src={Html} alt="Loding..." />
-                  </div>
-                  <div>
-                    <h3>{data.data[1].name}</h3>
-                  </div>
-                </div>
-                <div className="column-align">
-                  <div className="skill-image">
-                    <img className="skill-image" src={Mysql} alt="Loding..." />
-                  </div>
-                  <div>
-                    <h3>{data.data[2].name}</h3>
-                  </div>
+                <div>
+                  <h3>{data.data[0].name}</h3>
                 </div>
               </div>
-            </CardBody>
-          </Card>
-        </div>
+              <div className="column-align">
+                <div className="skill-image">
+                  <img className="skill-image" src={Html} alt="Loding..." />
+                </div>
+                <div>
+                  <h3>{data.data[1].name}</h3>
+                </div>
+              </div>
+              <div className="column-align">
+                <div className="skill-image">
+                  <img className="skill-image" src={Mysql} alt="Loding..." />
+                </div>
+                <div>
+                  <h3>{data.data[2].name}</h3>
+                </div>
+              </div>
+              <div className="column-align">
+                <div className="skill-image">
+                  <img className="skill-image" src={Mongo} alt="Loding..." />
+                </div>
+                <div>
+                  <h3>{data.data[12].name}</h3>
+                </div>
+              </div>
+            </div>
+          </CardBody>
+        </Card>
       </div>
+
       {/* Industry Knowledge */}
       <div className="card-content">
         <Card
@@ -96,7 +104,7 @@ const Skill = () => {
             </CardTitle>
             <br />
             <div className="skills">
-              <div className="column-align">
+              <div className="column-align1">
                 <div className="skill-image">
                   <img
                     className="skill-image"
@@ -108,7 +116,7 @@ const Skill = () => {
                   <h3>{data.data[3].name}</h3>
                 </div>
               </div>
-              <div className="column-align">
+              <div className="column-align1">
                 <div className="skill-image">
                   <img className="skill-image" src={Algo} alt="Loding..." />
                 </div>
@@ -116,7 +124,7 @@ const Skill = () => {
                   <h3>{data.data[4].name}</h3>
                 </div>
               </div>
-              <div className="column-align">
+              <div className="column-align1">
                 <div className="skill-image">
                   <img className="skill-image" src={Ml} alt="Loding..." />
                 </div>
@@ -144,7 +152,7 @@ const Skill = () => {
             </CardTitle>
             <br />
             <div className="skills">
-              <div className="column-align">
+              <div className="column-align1">
                 <div className="skill-image">
                   <img className="skill-image" src={Cimage} alt="Loding..." />
                 </div>
@@ -152,7 +160,7 @@ const Skill = () => {
                   <h3>{data.data[6].name}</h3>
                 </div>
               </div>
-              <div className="column-align">
+              <div className="column-align1">
                 <div className="skill-image">
                   <img className="skill-image" src={MsOffice} alt="Loding..." />
                 </div>
@@ -160,7 +168,7 @@ const Skill = () => {
                   <h3>{data.data[7].name}</h3>
                 </div>
               </div>
-              <div className="column-align">
+              <div className="column-align1">
                 <div className="skill-image">
                   <img className="skill-image" src={Css} alt="Loding..." />
                 </div>
@@ -172,7 +180,7 @@ const Skill = () => {
             <br />
             <br />
             <div className="skills">
-              <div className="column-align">
+              <div className="column-align1">
                 <div className="skill-image">
                   <img className="skill-image" src={Reactimg} alt="Loding..." />
                 </div>
@@ -180,7 +188,7 @@ const Skill = () => {
                   <h3>{data.data[9].name}</h3>
                 </div>
               </div>
-              <div className="column-align">
+              <div className="column-align1">
                 <div className="skill-image">
                   <img className="skill-image" src={Reduximg} alt="Loding..." />
                 </div>
@@ -188,7 +196,7 @@ const Skill = () => {
                   <h3>{data.data[10].name}</h3>
                 </div>
               </div>
-              <div className="column-align">
+              <div className="column-align1">
                 <div className="skill-image">
                   <img className="skill-image" src={Nodejs} alt="Loding..." />
                 </div>
